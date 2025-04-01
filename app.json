@@ -12,10 +12,16 @@
       "supportsTablet": true
     },
     "android": {
+      "config" :{
+        "googleMaps":{
+          "apiKey":"AIzaSyCuWXeQiSThkpuk89WCuVTa32nBKoxPVQM"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.fjba17.ArchivosApp"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +38,19 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8aa0c87e-34fd-4d56-98da-1a2b00a50552"
+      }
     }
   }
 }
